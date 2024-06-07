@@ -11,6 +11,10 @@
 		C31722092C12AEEF00796010 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31722082C12AEEF00796010 /* ContentView.swift */; };
 		C317220B2C12AEF100796010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C317220A2C12AEF100796010 /* Assets.xcassets */; };
 		C317220E2C12AEF100796010 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C317220D2C12AEF100796010 /* Preview Assets.xcassets */; };
+		C317221C2C12B1F500796010 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C317221B2C12B1F500796010 /* LoginView.swift */; };
+		C317221E2C12BD4D00796010 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C317221D2C12BD4D00796010 /* InputView.swift */; };
+		C31722202C12C43200796010 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C317221F2C12C43200796010 /* RegistrationView.swift */; };
+		C31722222C12C5BC00796010 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31722212C12C5BC00796010 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		C31722082C12AEEF00796010 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C317220A2C12AEF100796010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C317220D2C12AEF100796010 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C317221B2C12B1F500796010 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C317221D2C12BD4D00796010 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		C317221F2C12C43200796010 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		C31722212C12C5BC00796010 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,10 @@
 		C31722052C12AEEF00796010 /* BasicLogin */ = {
 			isa = PBXGroup;
 			children = (
-				C31722062C12AEEF00796010 /* BasicLoginApp.swift */,
-				C31722082C12AEEF00796010 /* ContentView.swift */,
+				C31722142C12B16800796010 /* App */,
+				C31722172C12B18B00796010 /* Model */,
+				C31722162C12B17D00796010 /* Core */,
+				C31722152C12B17500796010 /* Components */,
 				C317220A2C12AEF100796010 /* Assets.xcassets */,
 				C317220C2C12AEF100796010 /* Preview Content */,
 			);
@@ -65,6 +75,64 @@
 				C317220D2C12AEF100796010 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C31722142C12B16800796010 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C31722062C12AEEF00796010 /* BasicLoginApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C31722152C12B17500796010 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C317221D2C12BD4D00796010 /* InputView.swift */,
+				C31722212C12C5BC00796010 /* ButtonView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C31722162C12B17D00796010 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C317221A2C12B1C400796010 /* Profile */,
+				C31722192C12B1BD00796010 /* Authentication */,
+				C31722182C12B1A700796010 /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C31722172C12B18B00796010 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C31722182C12B1A700796010 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				C31722082C12AEEF00796010 /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		C31722192C12B1BD00796010 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				C317221B2C12B1F500796010 /* LoginView.swift */,
+				C317221F2C12C43200796010 /* RegistrationView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		C317221A2C12B1C400796010 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +205,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C317221C2C12B1F500796010 /* LoginView.swift in Sources */,
+				C31722222C12C5BC00796010 /* ButtonView.swift in Sources */,
+				C317221E2C12BD4D00796010 /* InputView.swift in Sources */,
 				C31722092C12AEEF00796010 /* ContentView.swift in Sources */,
 				C31722072C12AEEF00796010 /* BasicLoginApp.swift in Sources */,
+				C31722202C12C43200796010 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +347,8 @@
 				DEVELOPMENT_TEAM = M3H7BYVNPX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "the login app";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +378,8 @@
 				DEVELOPMENT_TEAM = M3H7BYVNPX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "the login app";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
